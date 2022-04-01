@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.24;
+pragma solidity >=0.5.16;
 
 //Importing openzeppelin-solidity ERC-721 implemented Standard
 import "../node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721.sol";
@@ -12,18 +12,26 @@ contract StarNotary is ERC721 {
         string name;
     }
 
-    string public tokenName;
-    string public tokenSymbol;
-
     // Implement Task 1 Add a name and symbol properties
     // name: Is a short name to your token
     // symbol: Is a short string like 'USD' -> 'American Dollar'
+    string public constant tokenName = "Star";
+    string public constant tokenSymbol = "STR";
     
 
     // mapping the Star with the Owner Address
     mapping(uint256 => Star) public tokenIdToStarInfo;
     // mapping the TokenId and price
     mapping(uint256 => uint256) public starsForSale;
+
+    // get tokenname & tokenSymbol
+    function getTokenName() public view returns(string memory) {
+        return tokenName;
+    }
+
+    function getTokenSymbol() public view returns(string memory) {
+        return tokenSymbol;
+    }
 
     
     // Create Star using the Struct
@@ -59,9 +67,9 @@ contract StarNotary is ERC721 {
     }
 
     // Implement Task 1 lookUptokenIdToStarInfo
-    function lookUptokenIdToStarInfo (uint _tokenId) public view returns (string memory) {
+    function lookUptokenIdToStarInfo (uint256 _tokenId) public view returns (string memory) {
         //1. You should return the Star saved in tokenIdToStarInfo mapping
-        return tokenIdToStarInfo[_tokenId];
+        return tokenIdToStarInfo[_tokenId].name;
     }
 
     // Implement Task 1 Exchange Stars function
