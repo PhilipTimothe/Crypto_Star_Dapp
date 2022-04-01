@@ -15,5 +15,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilipTimothe/Crypto_Star_Dapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PhilipTimothe/Crypto_Star_Dapp/issues"
+  },
+  "homepage": "https://github.com/PhilipTimothe/Crypto_Star_Dapp#readme"
 }
