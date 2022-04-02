@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.0",
+    "env-cmd": "^10.1.0",
     "openzeppelin-solidity": "2.3",
     "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.7.1"
@@ -16,7 +18,6 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PhilipTimothe/Crypto_Star_Dapp.git"
