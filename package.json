@@ -1,9 +1,9 @@
 {
   "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@truffle/hdwallet-provider": "^2.0.4",
     "dotenv": "^16.0.0",
     "env-cmd": "^10.1.0",
-    "openzeppelin-solidity": "2.3",
-    "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.7.1"
   },
   "name": "crypto_star_dapp",
